@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj": {}
+    "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj": {
+    "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
+        "projectUniqueName": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
         "projectName": "ConfigureRequestProcessingPipeline",
-        "projectPath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
+        "projectPath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
         "packagesPath": "C:\\Users\\nk185185\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\obj\\",
+        "outputPath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nk185185\\AppData\\Roaming\\NuGet\\NuGet.Config",

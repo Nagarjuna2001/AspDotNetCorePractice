@@ -9,7 +9,7 @@ using FetchingEmployeeDataWebApplication.ViewModels;
 
 namespace FetchingEmployeeDataWebApplication.Controllers
 {
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -19,17 +19,16 @@ namespace FetchingEmployeeDataWebApplication.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        [Route("~/")]
-        [Route("[action]")]
-
+        /*[Route("~/")]
+        [Route("[action]")]*/
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployees();
             return View(model);
         }
 
-        [Route("[action]")]
-        [Route("[action]/{id?}")]
+        /*[Route("[action]")]
+        [Route("[action]/{id?}")]*/
         public ViewResult Details(int? id)
         {
             //Employee model = _employeeRepository.GetEmployee(1);
@@ -58,6 +57,27 @@ namespace FetchingEmployeeDataWebApplication.Controllers
                 PageTitle = "Details Of Employee"
             };
             return View(homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            //if block condition is used to check if the validation and mapping to employee parameter is successfull
+            if (ModelState.IsValid)
+            {
+                _employeeRepository.AddEmployee(employee);
+                return RedirectToAction("details", new { id = employee.Id });
+            }
+
+
+            //if validation not successful then it redirects the same create view to allow us to create new employee
+            return View();
         }
     }
 }

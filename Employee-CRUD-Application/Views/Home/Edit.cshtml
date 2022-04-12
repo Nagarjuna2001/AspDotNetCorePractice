@@ -1,0 +1,43 @@
+﻿@model EmployeeEditViewModel
+
+@{
+    ViewBag.Title = "Edit Employee";
+    var photoPath = "~/Images/" + (Model.ExistingPhotoPath ?? "loginIcon.png");
+}
+
+<form enctype="multipart/form-data" asp-controller="home" asp-action="Edit" method="post">
+    <input hidden asp-for="Id" />
+    <input hidden asp-for="ExistingPhotoPath" />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Department"></label>
+        <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()"></select>
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Photo"></label>
+        <div>
+            <input asp-for="Photo" class="form-control custom-file-input" />
+            <label class="custom-file-label">Click here to change photo</label>
+        </div>
+    </div>
+
+    <div>
+        <img src="@photoPath" class="imageThumbnail" />
+    </div>
+
+    <div>
+        <button type="submit">Update</button>
+        <a asp-controller="home" asp-action="index">Cancel</a>
+    </div>
+
+</form>

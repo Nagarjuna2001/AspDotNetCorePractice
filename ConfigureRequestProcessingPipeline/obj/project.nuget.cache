@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KqH6hj08xm/HYJW2nrIys7jbqsn/zLu0yU4JNOmQN7pgZCz6HMC0FHwXsd44cGNhqIrwwbNZufj+UmPz5pfCVQ==",
+  "dgSpecHash": "ulIbWXM4dXqoCgLiXlWW/Dd3ovxph+AIqxXAhzQ5R6jOaW+Q5g/DdEgjwDsZQLLtFZHj1F1gnMiFb4zpU7T9GA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
+  "projectFilePath": "C:\\Users\\nk185185\\source\\repos\\AspDotNetCore\\AspDotNetCorePractice\\ConfigureRequestProcessingPipeline\\ConfigureRequestProcessingPipeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

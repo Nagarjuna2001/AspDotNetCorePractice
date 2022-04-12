@@ -37,12 +37,12 @@ namespace FetchingEmployeeDataWebApplication
             //app.UseMvcWithDefaultRoute();
 
             //Adds MVC support but you have to configure the route by defining a template of the route - Conventional routing
-            /*app.UseMvc(routes =>
+            app.UseMvc(routes =>
             {
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-            });*/
+            });
 
-            app.UseMvc();
+            //app.UseMvc();
 
             /*app.Run(async (context) =>
             {

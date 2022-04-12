@@ -12,9 +12,9 @@ namespace FetchingEmployeeDataWebApplication.Models
         {
             employeeList = new List<Employee>
             {
-                new Employee(){Id = 1, Name = "Mary", Department = "HR", Email = "mary@gmail.com" },
-                new Employee(){Id = 2, Name = "Steve", Department = "IT", Email = "steve@gmail.com" },
-                new Employee(){Id = 3, Name = "Bob", Department = "IT", Email = "bob@gmail.com" },
+                new Employee(){Id = 1, Name = "Mary", Department = Dept.HR, Email = "mary@gmail.com" },
+                new Employee(){Id = 2, Name = "Steve", Department = Dept.IT, Email = "steve@gmail.com" },
+                new Employee(){Id = 3, Name = "Bob", Department = Dept.IT, Email = "bob@gmail.com" },
             };
         }
         public Employee GetEmployee(int Id)
@@ -25,6 +25,13 @@ namespace FetchingEmployeeDataWebApplication.Models
         public IEnumerable<Employee> GetAllEmployees()
         {
             return employeeList;
+        }
+
+        public Employee AddEmployee(Employee employee)
+        {
+            employee.Id = employeeList.Max(employee => employee.Id) + 1;
+            employeeList.Add(employee);
+            return employee;
         }
     }
 }
